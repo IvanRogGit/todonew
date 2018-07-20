@@ -1,0 +1,55 @@
+
+<div class="container">
+
+
+      
+<h1>Редактирование задачи</h1>
+
+
+
+
+
+<%= form_for @task do |f| %>
+
+    <%= f.label :title,"Название" %><br>
+
+  <div class="form-group">
+    <%= f.text_field :title, class: "form-control", placeholder: "Название задачи" %>
+  </div>
+
+
+    <%= f.label :text, "Описание" %><br>
+  <div class="form-group">
+    <%= f.text_area :text, class: "form-control", size: "40x4", placeholder: "Описание" %>
+  </div>
+
+  
+  <p>
+   
+    <%= f.submit "Сохранить", class: "btn btn-primary" %>
+    
+  </p>
+  
+<% end %> 
+
+<%= link_to 'Назад', root_path%>   
+<hr>
+
+
+<address>
+  <strong>Instagram. IoanRog</strong><br>
+  Умань. Черкасская обл.<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+  <strong>Почта</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+
+
+</div>
+
+
+
+
